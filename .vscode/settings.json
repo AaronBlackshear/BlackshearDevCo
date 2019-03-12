@@ -1,0 +1,10 @@
+{
+  "cSpell.words": [
+    "endpoint",
+    "prisma"
+  ],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#FFC600",
+    "titleBar.inactiveBackground": "#FFC600CC"
+  }
+}
