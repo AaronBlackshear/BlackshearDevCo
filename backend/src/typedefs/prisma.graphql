@@ -1,8 +1,4 @@
 type Query {
-  # users(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [User]!
-  # user(where: UserWhereUniqueInput!): User
-  # users: [User!]!
-  # user(id: ID!) : User
   info: String!
   feed: [Link!]!
 }
@@ -11,22 +7,23 @@ type Link {
   id: ID!
   description: String!
   url: String!
+  postedBy: User
 }
 
 type Mutation {
   post(url: String!, description: String!): Link!
+  signup(email: String!, password: String!, name: String!): AuthPayload
+  login(email: String!, password: String!): AuthPayload
 }
 
-# type User {
-#   id: ID!,
-#   name: String!
-#   email: String!
-# }
+type AuthPayload {
+  token: String
+  user: User
+}
 
-# type Mutation {
-#   createUser(
-#     name: String!
-#     email: String!
-#     password: String!
-#   ) : User!
-# }
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  links: [Link!]!
+}

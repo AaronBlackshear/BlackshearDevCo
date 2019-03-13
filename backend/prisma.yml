@@ -6,5 +6,8 @@ generate:
     output: ./src/generated/prisma-client
 
 hooks:
-  post-depoy:
-    - graphql get-schema -p prisma
+  post-deploy:
+    - prisma generate
+# hooks:
+#   post-depoy:
+#     - graphql get-schema -p prisma
