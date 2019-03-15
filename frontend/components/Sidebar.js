@@ -17,8 +17,18 @@ export default function Sidebar() {
       </SidebarItem>
 
       <SidebarItem to="/skills" textAlign={sidebarWidth === 75 ? 'center' : 'left'}>
-        <i className="fab fa-react"></i>
+        <i className="fab fa-react" />
         <p className={sidebarWidth === 75 ? 'hide' : 'show'}>Skills</p>
+      </SidebarItem>
+
+      <SidebarItem to="/blog" textAlign={sidebarWidth === 75 ? 'center' : 'left'}>
+        <i className="fas fa-book" />
+        <p className={sidebarWidth === 75 ? 'hide' : 'show'}>Blog</p>
+      </SidebarItem>
+
+      <SidebarItem to="/contact" textAlign={sidebarWidth === 75 ? 'center' : 'left'}>
+        <i class="far fa-envelope" />
+        <p className={sidebarWidth === 75 ? 'hide' : 'show'}>Contact</p>
       </SidebarItem>
     </SidebarStyle>
   )

@@ -38,11 +38,11 @@ const StyledPage = styled.div`
 `;
 
 const Inner = styled.div`
-  max-width: calc(100vw - 250px);
+  width: calc(100vw - 75px);
   margin: 0 auto;
   padding: 2rem;
   min-height: 100vh;
-  margin-left: ${props => props.width || '250px'};
+  margin-left: 75px;
 `;
 
 Router.onRouteChangeStart = () => {

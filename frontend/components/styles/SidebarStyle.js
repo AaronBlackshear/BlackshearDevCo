@@ -8,7 +8,7 @@ const SidebarStyle = styled.div`
   position: absolute;
   left: 0;
   list-style: none;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s cubic-bezier(0.46, 0.15, 0.17, 1.06);
   padding: 10px 0px;
 `;
 

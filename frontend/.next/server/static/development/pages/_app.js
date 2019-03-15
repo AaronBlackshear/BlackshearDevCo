@@ -248,9 +248,7 @@ var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.wi
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__Inner",
   componentId: "sc-4u7a64-1"
-})(["max-width:calc(100vw - 250px);margin:0 auto;padding:2rem;min-height:100vh;margin-left:", ";"], function (props) {
-  return props.width || '250px';
-});
+})(["width:calc(100vw - 75px);margin:0 auto;padding:2rem;min-height:100vh;margin-left:75px;"]);
 
 next_router__WEBPACK_IMPORTED_MODULE_2___default.a.onRouteChangeStart = function () {
   nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.start();
@@ -416,7 +414,51 @@ function Sidebar() {
       lineNumber: 21
     },
     __self: this
-  }, "Skills")));
+  }, "Skills")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SidebarItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    to: "/blog",
+    textAlign: sidebarWidth === 75 ? 'center' : 'left',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-book",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: sidebarWidth === 75 ? 'hide' : 'show',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SidebarItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    to: "/contact",
+    textAlign: sidebarWidth === 75 ? 'center' : 'left',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    class: "far fa-envelope",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: sidebarWidth === 75 ? 'hide' : 'show',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "Contact")));
 }
 
 /***/ }),
@@ -489,7 +531,7 @@ __webpack_require__.r(__webpack_exports__);
 var SidebarStyle = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "SidebarStyle",
   componentId: "sc-1kdyh7h-0"
-})(["width:", ";background-color:", ";color:", ";height:100vh;position:absolute;left:0;list-style:none;transition:0.2s ease-in-out;padding:10px 0px;"], function (props) {
+})(["width:", ";background-color:", ";color:", ";height:100vh;position:absolute;left:0;list-style:none;transition:0.5s cubic-bezier(0.46,0.15,0.17,1.06);padding:10px 0px;"], function (props) {
   return "".concat(props.width, "px") || '250px';
 }, function (props) {
   return props.background || '#333';

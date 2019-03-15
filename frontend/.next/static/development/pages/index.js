@@ -3993,7 +3993,7 @@ function index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -4018,5 +4018,5 @@ module.exports = dll_efbb6627f5f0ec42c070;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[6,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
